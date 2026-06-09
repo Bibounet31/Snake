@@ -1,6 +1,12 @@
-#ifndef MENU_H
-#define MENU_H
+#ifndef GLOBAL_H
+#define GLOBAL_H
 
-void menu();  
+#define ROWS 20
+#define COLS 20
+
+void print_grid(int **grid);
+
+
+int **init();
 
 #endif

@@ -5,8 +5,9 @@
 int main() {
 
 
-    menu();
+    int **grid = init();
+    print_grid(grid);
+    //menu();
 
-
-
+    return 0;
 }

@@ -7,5 +7,7 @@ add_executable(Snake
         LICENSE
         main.c
         README.md
-        global.c
-        global.h)
+        menu.c
+        global.h
+        init.c
+        display.c)
