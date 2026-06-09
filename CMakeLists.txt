@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(Snake
         LICENSE
         main.c
-        README.md)
+        README.md
+        global.c
+        global.h)

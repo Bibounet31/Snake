@@ -1,20 +1,12 @@
-#include <stdio.h>
+#include "global.h"
+
+
 
 int main() {
-    printf("hi!");
 
-    int choice = 0;
 
-    scanf("%d", &choice);
+    menu();
 
-    switch (choice) {
-        case 1:
-            printf("1");
-            break;
-        case 2:
-            printf("2");
-            break;
-    }
 
 
 }
