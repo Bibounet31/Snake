@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "global.h"
+
 
 void menu() {
     printf("hi! \n");

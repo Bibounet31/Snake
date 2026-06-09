@@ -4,8 +4,12 @@
 
 int main() {
 
+    Snake snake;
 
-    int **grid = init();
+
+    int **grid = init(&snake);
+
+    
     print_grid(grid);
     //menu();
 
