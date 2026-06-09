@@ -28,6 +28,8 @@ int **init(Snake *snake);
 
 void spawn_food(int **grid);
 
+int check_collision(int **grid, Snake *snake);
+
 void set_terminal(int enable_raw);
 int get_input(Snake *snake);
 #endif

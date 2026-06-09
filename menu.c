@@ -28,9 +28,14 @@ void menu() {
 
             while (1) {
                 get_input(&snake);
+                move_snake(grid, &snake);
+                if (check_collision(grid, &snake)) {
+                    system("clear");
+                    printf("Game over! Score: %d\n", snake.length);
+                    break;
+                }
                 system("clear");
                 print_grid(grid);
-                move_snake(grid, &snake);
                 usleep(200000);
             }
 

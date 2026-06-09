@@ -44,3 +44,22 @@ void move_snake(int **grid, Snake *snake) {
     snake->body[0] = new_head;
     grid[new_head.x][new_head.y] = 1;
 }
+
+
+
+int check_collision(int **grid, Snake *snake) {
+    int x = snake->body[0].x;
+    int y = snake->body[0].y;
+
+    // wall colision
+    if (x < 0 || x >= ROWS || y < 0 || y >= COLS)
+        return 1;
+
+    // self colision
+    for (int i = 1; i < snake->length; i++) {
+        if (snake->body[i].x == x && snake->body[i].y == y)
+            return 1;
+    }
+
+    return 0;
+}
