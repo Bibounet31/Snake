@@ -1,7 +1,10 @@
 #include <stdlib.h>
+#include <time.h>
+
 #include "global.h"
 
 int **init(Snake *snake) {
+    srand(time(NULL));
     //init grid (list of list.. sounds fun)
     int **grid = malloc(ROWS * sizeof(int *));
     for (int i = 0; i < ROWS; i++) {
@@ -20,7 +23,7 @@ int **init(Snake *snake) {
 
 
 
-
+    spawn_food(grid);
     return grid;
 }
 

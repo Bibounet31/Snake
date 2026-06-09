@@ -26,6 +26,8 @@ void print_grid(int **grid);
 
 int **init(Snake *snake);
 
+void spawn_food(int **grid);
+
 void set_terminal(int enable_raw);
 int get_input(Snake *snake);
 #endif
