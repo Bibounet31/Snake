@@ -11,4 +11,5 @@ add_executable(Snake
         global.h
         init.c
         display.c
-        snake.c)
+        snake.c
+        input.c)

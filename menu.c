@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+
+#include "global.h"
 
 
 void menu() {
@@ -19,6 +22,19 @@ void menu() {
         case 1:
             /// call init game then start game
             printf("starting game....");
+            Snake snake;
+            int **grid = init(&snake);
+            set_terminal(1);
+
+            while (1) {
+                get_input(&snake);
+                system("clear");
+                print_grid(grid);
+                move_snake(grid, &snake);
+                usleep(200000);
+            }
+
+            set_terminal(0);
             break;
 
 

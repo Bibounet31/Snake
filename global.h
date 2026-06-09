@@ -18,11 +18,14 @@ typedef struct {
     int direction; //for ref:  0=up 1=right 2=down 3=left
 } Snake;
 
+void menu();
+
 void move_snake(int **grid, Snake *snake);
 
 void print_grid(int **grid);
 
 int **init(Snake *snake);
 
-
+void set_terminal(int enable_raw);
+int get_input(Snake *snake);
 #endif
