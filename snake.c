@@ -24,8 +24,9 @@ void move_snake(int **grid, Snake *snake) {
         case 3: new_head.y--; break; // left
     }
 
+
+    // if food > grow
     if (grid[new_head.x][new_head.y] == 2) {
-        // if food> grow
         snake->length++;
         snake->body = realloc(snake->body, snake->length * sizeof(Point));
         spawn_food(grid);
