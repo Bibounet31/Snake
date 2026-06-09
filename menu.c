@@ -39,6 +39,13 @@ void menu() {
                 usleep(200000);
             }
 
+            for (int i = 0; i < ROWS; i++) {
+                free(grid[i]);
+            }
+            free(grid);
+
+            free(snake.body);
+
             set_terminal(0);
             break;
 
