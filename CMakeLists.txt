@@ -10,4 +10,5 @@ add_executable(Snake
         menu.c
         global.h
         init.c
-        display.c)
+        display.c
+        snake.c)
